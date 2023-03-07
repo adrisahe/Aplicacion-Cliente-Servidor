@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PracticaDosCliente-Servidor:jar3">
+    <output-path>$PROJECT_DIR$/out/artifacts/PracticaDosCliente_Servidor_jar3</output-path>
+    <root id="archive" name="PracticaDosCliente-Servidor.jar">
+      <element id="module-output" name="PracticaDosCliente-Servidor" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jgoodies-common-1.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jgoodies-forms-1.9.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

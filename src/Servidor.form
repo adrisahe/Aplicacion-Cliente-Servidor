@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Servidor">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <colspec value="fill:d:grow"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="247"/>
+    </constraints>
+    <properties>
+      <preferredSize width="526" height="247"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="b4043" binding="panelIniciar" layout-manager="FlowLayout" hgap="55" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="174bf" class="javax.swing.JLabel" binding="labelPuerto">
+            <constraints/>
+            <properties>
+              <text value="Puerto"/>
+            </properties>
+          </component>
+          <component id="6e45a" class="javax.swing.JTextField" binding="textoPuerto">
+            <constraints/>
+            <properties>
+              <minimumSize width="49" height="30"/>
+              <preferredSize width="99" height="30"/>
+              <toolTipText value="Asigna el puerto del servidor"/>
+            </properties>
+          </component>
+          <component id="9c2da" class="javax.swing.JButton" binding="iniciar">
+            <constraints/>
+            <properties>
+              <preferredSize width="98" height="30"/>
+              <text value="Iniciar"/>
+              <toolTipText value="Pulsa para arrancar el servidor"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5aa84" binding="panelLabels" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="7da57" class="javax.swing.JLabel" binding="labelClientesConectados">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Clientes conectados"/>
+            </properties>
+          </component>
+          <component id="d70bb" class="javax.swing.JLabel" binding="labelFicherosDisponibles">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Fichero disponibles "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="4348d" binding="panelScrollListas" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="c45d" binding="scrollClientes">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7cd2c" class="javax.swing.JList" binding="listaClientes">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="eef3b" binding="scrollFicheros">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9ac6f" class="javax.swing.JList" binding="listaFicheros">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <component id="de846" class="javax.swing.JButton" binding="anadirFichero">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="AñadirFichero"/>
+          <toolTipText value="Pulsa para añadir un fichero a la lista"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

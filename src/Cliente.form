@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Cliente">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <colspec value="fill:d:grow"/>
+    <constraints>
+      <xy x="20" y="20" width="544" height="331"/>
+    </constraints>
+    <properties>
+      <preferredSize width="556" height="678"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="20d60" binding="panelConexion" layout-manager="FlowLayout" hgap="40" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f5c70" class="javax.swing.JLabel" binding="labelPuerto">
+            <constraints/>
+            <properties>
+              <text value="Puerto:"/>
+            </properties>
+          </component>
+          <component id="aa945" class="javax.swing.JTextField" binding="textoPuerto">
+            <constraints/>
+            <properties>
+              <preferredSize width="99" height="30"/>
+              <toolTipText value="añade el puerto al que quieres conectarte"/>
+            </properties>
+          </component>
+          <component id="4f176" class="javax.swing.JLabel" binding="labelIP">
+            <constraints/>
+            <properties>
+              <text value="IP:"/>
+            </properties>
+          </component>
+          <component id="e0347" class="javax.swing.JTextField" binding="textFieldIP">
+            <constraints/>
+            <properties>
+              <preferredSize width="105" height="30"/>
+              <toolTipText value="Añada la direccion ip del servidor"/>
+            </properties>
+          </component>
+          <component id="39e2b" class="javax.swing.JButton" binding="conectar">
+            <constraints/>
+            <properties>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <preferredSize width="91" height="30"/>
+              <text value="Conectar"/>
+              <toolTipText value="Pulsa para conectarte al servidor"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="ffc16" binding="scrollLista">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2278e" class="javax.swing.JList" binding="listaFicheros">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="a959a" binding="scrollPanelDescargas">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <preferredSize width="256" height="128"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="ab28f" binding="panelDescargas" custom-create="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints/>
+            <properties>
+              <minimumSize width="10" height="10"/>
+              <preferredSize width="10" height="100000"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </scrollpane>
+      <component id="28457" class="javax.swing.JLabel" binding="labelFicherosDisponible">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Ficheros Disponibles"/>
+        </properties>
+      </component>
+      <component id="db1f4" class="javax.swing.JLabel" binding="labelDescargasCurso">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Descargas en Curso"/>
+        </properties>
+      </component>
+      <component id="cad66" class="javax.swing.JButton" binding="botonDescargar">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <forms/>
+        </constraints>
+        <properties>
+          <text value="Descargar"/>
+          <toolTipText value="Pulsa para descargar el fichero seleccionado"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
